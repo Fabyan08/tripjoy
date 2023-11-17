@@ -8,45 +8,49 @@ export default function Home() {
   return (
     <>
       <main className="bg-[url('/assets/img/bg3.jpg')] relative  bg-cover h-[972px] overflow-x-hidden">
-        <Nav  className="fixed top-0"/>
+        <Nav className="fixed top-0" />
 
-        <h1 className="-mt-52 md:-mt-20 text-[80px] md:text-[200px] font-black text-center flex justify-center items-center h-screen font-figtree text-white/70">
+        <h1 className="-mt-20 text-[80px] md:text-[200px] font-black text-center flex justify-center items-center h-screen font-figtree text-white/70">
           Find Your Way
         </h1>
 
-        <div className="md:flex px-10 -mt-80 md:-mt-40 items-center justify-between">
-          <div className=" grid grid-cols-2 md:flex justify-center ">
-            <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
-              <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                <h1 className="text-center text-white">😎Trip</h1>
+        <div className="md:flex px-10 -mt-60 md:-mt-40 items-center justify-between">
+          <div className="md:flex justify-center ">
+            <div className="flex justify-center">
+              <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
+                <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
+                  <h1 className="text-center text-white">😎Trip</h1>
+                </div>
+                <h1 className="text-white p-2 text-md text-center">
+                  Unbelivable Trip Experience
+                </h1>
               </div>
-              <h1 className="text-white p-2 text-md text-center">
-                Unbelivable Trip Experience
-              </h1>
+              <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
+                <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
+                  <h1 className="text-center text-white">😎Trip</h1>
+                </div>
+                <h1 className="text-white p-2 text-md text-center">
+                  Unbelivable Trip Experience
+                </h1>
+              </div>
             </div>
-            <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
-              <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                <h1 className="text-center text-white">😎Trip</h1>
+            <div className="flex justify-center">
+              <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
+                <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
+                  <h1 className="text-center text-white">😎Trip</h1>
+                </div>
+                <h1 className="text-white p-2 text-md text-center">
+                  Unbelivable Trip Experience
+                </h1>
               </div>
-              <h1 className="text-white p-2 text-md text-center">
-                Unbelivable Trip Experience
-              </h1>
-            </div>
-            <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
-              <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                <h1 className="text-center text-white">😎Trip</h1>
+              <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
+                <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
+                  <h1 className="text-center text-white">😎Trip</h1>
+                </div>
+                <h1 className="text-white p-2 text-md text-center">
+                  Unbelivable Trip Experience
+                </h1>
               </div>
-              <h1 className="text-white p-2 text-md text-center">
-                Unbelivable Trip Experience
-              </h1>
-            </div>
-            <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
-              <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                <h1 className="text-center text-white">😎Trip</h1>
-              </div>
-              <h1 className="text-white p-2 text-md text-center">
-                Unbelivable Trip Experience
-              </h1>
             </div>
           </div>
           <div className=" ml-4">
