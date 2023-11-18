@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa6";
 export default function ReviewPage() {
   return (
-    <div className="bg-gradient-to-b mb-96 from-[#142536] to-bl w-full h-fit pb-10">
+    <div className="bg-gradient-to-b from-[#142536] to-bl w-full h-fit pb-10">
       <div className="md:pt-20">
         <h1 className="text-center text-2xl md:pt-20 text-blue-500">Review</h1>
         <h1 className="text-white text-center font-bold text-lg">

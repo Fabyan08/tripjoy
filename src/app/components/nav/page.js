@@ -33,14 +33,14 @@ export default function Nav() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <Image src="/assets/img/logo2.png" width={150} height={150} />
+          <Image src="/assets/img/logo2.webp" width={150} height={150} />
           <p className="font-bold text-inherit"></p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <Image src="/assets/img/logo2.png" width={150} height={150} />
+          <Image src="/assets/img/logo2.webp" width={150} height={150} />
           <p className="font-bold text-inherit"></p>
         </NavbarBrand>
         <NavbarItem>

@@ -7,6 +7,7 @@ import Nav from "./components/nav/page";
 import DiscoverPage from "./components/discover/page";
 import AboutPage from "./components/about/page";
 import ReviewPage from "./components/review/page";
+import ContactPage from "./components/contact/page";
 
 export default function Home() {
   return (
@@ -75,6 +76,7 @@ export default function Home() {
       <DiscoverPage />
       <AboutPage />
       <ReviewPage />
+      <ContactPage />
       {/* <div className="mt-[1000px]"></div> */}
     </>
   );
