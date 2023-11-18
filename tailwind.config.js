@@ -16,8 +16,9 @@ module.exports = {
       colors: {
         primary: "#61AEDA",
         second: "#6DDEB3",
-        bl: "#0D1E3D",
-        bl2: "#07040F",
+        bl: "#090715",
+        bl2: "#10375A",
+        purp: "#162238"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
