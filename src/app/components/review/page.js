@@ -18,10 +18,10 @@ export default function ReviewPage() {
           facilis porro consequatur? Saepe nihil, odio suscipit accusamus qui
           itaque commodi quidem laboriosam error, modi nulla recusandae!
           <div className="absolute left-0 -top-5">
-            <h1 className="text-[100px] opacity-30">"</h1>
+            <h1 className="text-[100px] opacity-30">&quot;</h1>
           </div>
           <div className="absolute right-0 -top-[1px]">
-            <h1 className="text-[100px] opacity-30">"</h1>
+            <h1 className="text-[100px] opacity-30">&quot;</h1>
           </div>
           <div className="flex justify-center space-x-4 mt-4">
             <FaStar className="text-center text-yellow-500" />
