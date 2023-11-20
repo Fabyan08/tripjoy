@@ -21,24 +21,24 @@ export default function DiscoverPage() {
       <div className="md:flex mt-10 grid grid-cols-2 px-10  md:space-x-10 relative md:justify-between h-[500px]">
       
         <Image
-          src="assets/img/mount.jpg"
+          src="assets/img/discover/1.jpg"
           className="w-full rounded-lg h-full hover:scale-[1.05] duration-300"
           alt="mount"
         ></Image>
         <div className="md:flex md:flex-col relative z-10  md:justify-between">
           <img
-            src="assets/img/mount.jpg"
+            src="assets/img/discover/2.jpg"
             className="w-96 hover:scale-[1.05] duration-300 rounded-lg md:pb-2 h-1/2"
             alt=""
           />{" "}
           <img
-            src="assets/img/mount.jpg"
+            src="assets/img/discover/3.jpg"
             className="w-96 hover:scale-[1.05] duration-300 rounded-lg md:pt-2 h-1/2 hover:rounded-none"
             alt=""
           />{" "}
         </div>
         <Image
-          src="assets/img/mount.jpg"
+          src="assets/img/discover/4.jpg"
           className="w-full hidden md:flex hover:scale-[1.05] duration-300 rounded-lg h-full"
           alt="mount"
         ></Image>{" "}

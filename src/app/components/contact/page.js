@@ -35,7 +35,7 @@ export default function ContactPage() {
         </div>
       </div>
       <section id="footer">
-        <div className="md:flex space-y-5 flex flex-col-reverse md:space-y-0 md:space-x-40">
+        <div className="md:flex space-y-5 flex md:flex-row flex-col-reverse md:space-y-0 md:space-x-40">
           <div className="space-y-4 mt-4 md:mt-0">
             <Image
               src="/assets/img/logo2.webp"

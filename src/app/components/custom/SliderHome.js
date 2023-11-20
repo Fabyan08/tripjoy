@@ -29,9 +29,10 @@ const SliderHome = ({ carouselImage }) => {
           //   type: "progressbar",
           // }}
           navigation={true}
-          modules={[Pagination, Autoplay, EffectCoverflow, Navigation]}
-          spaceBetween={5}
-          slidesPerView={1}
+          modules={[ Autoplay, EffectCoverflow, Navigation]}
+          spaceBetween={15}
+          slidesPerView={1.5}
+          initialSlide={2}
           // centeredSlides={true}
           // initialSlide={2}
           // grabCursor={true}
@@ -48,44 +49,57 @@ const SliderHome = ({ carouselImage }) => {
         >
           <style>
             {`
-            .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+            .swiper-pagination-bullet-active {
               background: #ffffff;
-            }
-            .swiper-pagination {
-              padding-bottom:10px;
+              width: 40px;
               border-radius: 50px;
+
             }
+            .swiper-pagination-bullet {
+              padding-bottom:10px;
+              background: #ffffff;
+              border-radius: 50px;
+              animation: 
+            }
+         
           `}
           </style>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/home/1.jpg"
               className=" w-full h-32 md:h-52 rounded-[14px] cursor-pointer"
             />
-            <h1 className="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</h1>
+            <h1 className="text-white">
+              Experience the fun of exploring the snow
+            </h1>
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/home/2.jpg"
               className=" w-full h-32 md:h-52 rounded-[14px] cursor-pointer"
             />
-            <h1 className="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</h1>
+            <h1 className="text-white">
+            Exploring the beach with beauty view
+            </h1>
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/home/3.jpg"
               className=" w-full h-32 md:h-52 rounded-[14px] cursor-pointer"
             />
-            <h1 className="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</h1>
+            <h1 className="text-white">
+              Jungle with wild view? No problem! Lets Go to Go!
+            </h1>
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/home/4.jpg"
               className=" w-full h-32 md:h-52 rounded-[14px] cursor-pointer"
             />
-            <h1 className="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</h1>
+            <h1 className="text-white">
+            Snowy View, Cold Ice. An Unbeliavable Experience
+            </h1>
           </SwiperSlide>
-         
         </Swiper>
       </div>
     </>

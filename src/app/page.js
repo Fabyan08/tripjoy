@@ -8,6 +8,7 @@ import DiscoverPage from "./components/discover/page";
 import AboutPage from "./components/about/page";
 import ReviewPage from "./components/review/page";
 import ContactPage from "./components/contact/page";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -19,41 +20,41 @@ export default function Home() {
           Find Your Way
         </h1>
 
-        <div className="md:flex  px-10 -mt-60 md:-mt-40 items-center justify-between">
+        <div className="md:flex   px-10 -mt-60 md:-mt-40 items-center justify-between">
           <div className="md:flex justify-center pt-20">
             <div className="flex justify-center">
               <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
                 <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                  <h1 className="text-center text-white">😎Trip</h1>
+                  <h1 className="text-center text-white">🏕️</h1>
                 </div>
                 <h1 className="text-white p-2 text-md text-center">
-                  Unbelivable Trip Experience
+                  Camping With The Best View
                 </h1>
               </div>
               <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
                 <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                  <h1 className="text-center text-white">😎Trip</h1>
+                  <h1 className="text-center text-white">🛳️</h1>
                 </div>
                 <h1 className="text-white p-2 text-md text-center">
-                  Unbelivable Trip Experience
+                  Unbelivable With Ship Experience
                 </h1>
               </div>
             </div>
             <div className="flex justify-center">
               <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
                 <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                  <h1 className="text-center text-white">😎Trip</h1>
+                  <h1 className="text-center text-white">🏄🏻‍♀️</h1>
                 </div>
                 <h1 className="text-white p-2 text-md text-center">
-                  Unbelivable Trip Experience
+                  Feel The Cold of The Beach{" "}
                 </h1>
               </div>
               <div className="bg-white/20 m-4 backdrop-blur-xl w-40 h-28 p-2 rounded-lg">
                 <div className="bg-[#0D1E3D] rounded-xl w-36 h-10 flex justify-center items-center">
-                  <h1 className="text-center text-white">😎Trip</h1>
+                  <h1 className="text-center text-white">🧗🏻‍♀️</h1>
                 </div>
                 <h1 className="text-white p-2 text-md text-center">
-                  Unbelivable Trip Experience
+                  Climbing With Mountain View{" "}
                 </h1>
               </div>
             </div>
@@ -69,6 +70,20 @@ export default function Home() {
             </h1> */}
           </div>
         </div>
+        {/* <div className="relative"> */}
+        {/* <div className=""> */}
+        {/* <div class="block-container fixed w-12 h-12"><div class="btn-back rounded-xl btn-back-red"></div><div class="btn-front rounded-xl flex justify-center items-center"><FaArrowUp /></div></div> */}
+        <div className="block-container">
+          <div className="btn-back rounded-xl h-10 w-10 bg-bl2"></div>
+          <a
+            href="#"
+            className="bg-bl2/20 text-white backdrop-blur-md  hover:scale-110 hover:bg-bl2 duration-150  hover:border-2 hover:border-white hover:rounded-full fixed z-50 bottom-12 right-12 rounded-xl p-4"
+          >
+            <FaArrowUp />
+          </a>
+        </div>
+        {/* </div> */}
+        {/* </div> */}
 
         {/* <div className="absolute bg-white bottom-0 h-10 z-10 w-full"></div> */}
       </main>

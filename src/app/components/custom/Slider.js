@@ -67,7 +67,7 @@ const SliderEvent = ({ carouselImage }) => {
           </style>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/popular/1.jpg"
               className="event-images rounded-[14px] cursor-pointer"
             />
             <div className="absolute md:text-xl md:pt-40 bottom-0 md:pb-10 md:space-y-2 rounded-xl p-2 w-full bg-gradient-to-b from-bl2/10 via-bl2/70 to-bl">
@@ -82,12 +82,12 @@ const SliderEvent = ({ carouselImage }) => {
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/popular/2.jpg"
               className="event-images rounded-[14px] cursor-pointer"
             />
             <div className="absolute md:text-xl md:pt-40 bottom-0 md:pb-10 md:space-y-2 rounded-xl p-2 w-full bg-gradient-to-b from-bl2/10 via-bl2/70 to-bl">
               <h1 className="font-bold">
-                Everest Mountain, Nepal, Tibet | Rp 20.000.000
+              3 Warna Beach, Malang | Rp 5.000.000
               </h1>
               <h3 className="text-base">Best Track For Adrenaline Soul!</h3>
               <div className="flex items-center space-x-2 text-orange-300">
@@ -97,12 +97,12 @@ const SliderEvent = ({ carouselImage }) => {
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/popular/3.jpg"
               className="event-images rounded-[14px] cursor-pointer"
             />
             <div className="absolute md:text-xl md:pt-40 bottom-0 md:pb-10 md:space-y-2 rounded-xl p-2 w-full bg-gradient-to-b from-bl2/10 via-bl2/70 to-bl">
               <h1 className="font-bold">
-                Everest Mountain, Nepal, Tibet | Rp 20.000.000
+               Pulau Tanjung, Indonesia | Rp 10.000.000
               </h1>
               <h3 className="text-base">Best Track For Adrenaline Soul!</h3>
               <div className="flex items-center space-x-2 text-orange-300">
@@ -112,12 +112,12 @@ const SliderEvent = ({ carouselImage }) => {
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/assets/img/trip1.jpg"
+              src="/assets/img/popular/4.jpg"
               className="event-images rounded-[14px] cursor-pointer"
             />
             <div className="absolute md:text-xl md:pt-40 bottom-0 md:pb-10 md:space-y-2 rounded-xl p-2 w-full bg-gradient-to-b from-bl2/10 via-bl2/70 to-bl">
               <h1 className="font-bold">
-                Everest Mountain, Nepal, Tibet | Rp 20.000.000
+               Gunung Merapi, Indonesia | Rp 10.000.000
               </h1>
               <h3 className="text-base">Best Track For Adrenaline Soul!</h3>
               <div className="flex items-center space-x-2 text-orange-300">
