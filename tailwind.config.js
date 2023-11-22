@@ -12,6 +12,7 @@ module.exports = {
         figtree: ["Figtree", "sans-serif"],
         handlee: ["Handlee", "cursive"],
         roboto: ["Roboto", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         primary: "#61AEDA",
