@@ -195,19 +195,138 @@ export default function GenrePage() {
                 </form>
                 <div className="mt-2">
                   <div className="grid grid-cols-3 gap-3">
-                    <div className="w-full bg-white h-40"></div>
-                    <div className="w-full bg-white h-40"></div>
-                    <div className="w-full bg-white h-40"></div>
-                    <div className="w-full bg-white h-40"></div>
-                    <div className="w-full bg-white h-40"></div>
-                    <div className="w-full bg-white h-40"></div>
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] rounded-xl h-96 object-cover">
+                      <div className="flex relative items-end h-full justify-center">
+                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
+                          <h1 className="font-bold">
+                            Tanjung Pinang, Makassar
+                          </h1>
+                          <h1 className="text-sm">
+                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
+                            Berlaku
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                   
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Input type="email" label="Email" />
       </section>
     </>
   );
