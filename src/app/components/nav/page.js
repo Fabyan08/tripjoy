@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Navbar,
   NavbarBrand,
@@ -9,8 +10,6 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
 } from "@nextui-org/react";
 
 export default function Nav() {
@@ -46,14 +45,14 @@ export default function Nav() {
         <NavbarItem>
           <Link
             className="text-slate-200 hover:text-white hover:border-b-2 hover:border-white duration-300 rounded-sm hover:scale-110"
-            href="#"
+            href="/"
           >
             Beranda
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="#"
+            href="/destinasi"
             className="text-slate-200 hover:text-white hover:border-b-2 hover:border-white duration-300 rounded-sm hover:scale-110"
           >
             Destinasi
@@ -63,15 +62,15 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button
-            as={Link}
+          <Link
+            // as={Link}
             className=" px-4 py-2 rounded-full hover:scale-[1.05] duration-500 bg-white backdrop-blur-md text-gray-900 font-semibold"
             color="warning"
-            href="#"
+            href="/auth/login"
             variant="flat"
           >
             Join Us
-          </Button>
+          </Link>
         </NavbarItem>
       </NavbarContent>
 
