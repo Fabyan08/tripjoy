@@ -29,6 +29,8 @@ const SliderDestinasi = ({ carouselImage }) => {
             scrollbar={{
               hide: true,
             }}
+            spaceBetween={-100}
+            initialSlide={1}
             modules={[Scrollbar]}
             className="mySwiper text-black"
           >
@@ -37,7 +39,7 @@ const SliderDestinasi = ({ carouselImage }) => {
                 <div className="flex justify-center">
                   <img
                     src="/assets/img/popular/3.jpg"
-                    className="w-[90%] md:w-[63%] rounded-lg"
+                    className="object-cover h-[600px] w-[90%] mx-auto rounded-lg"
                     alt=""
                   />
                 </div>
@@ -46,7 +48,7 @@ const SliderDestinasi = ({ carouselImage }) => {
                 <div className="flex justify-center">
                   <img
                     src="/assets/img/popular/3.jpg"
-                    className="w-[90%] md:w-[63%] rounded-lg"
+                    className="object-cover h-[600px] w-[90%] mx-auto rounded-lg"
                     alt=""
                   />
                 </div>
@@ -55,7 +57,7 @@ const SliderDestinasi = ({ carouselImage }) => {
                 <div className="flex justify-center">
                   <img
                     src="/assets/img/popular/3.jpg"
-                    className="w-[90%] md:w-[63%] rounded-lg"
+                    className="object-cover h-[600px] w-[90%] mx-auto rounded-lg"
                     alt=""
                   />
                 </div>

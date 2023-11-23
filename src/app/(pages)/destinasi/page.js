@@ -1,5 +1,6 @@
 import SliderDestinasi from "@/app/components/custom/SliderDestinasi";
 import Nav from "@/app/components/nav/page";
+import GenrePage from "./genre/page";
 export default function DestinasiPage() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function DestinasiPage() {
           <SliderDestinasi />
         </div>
       </div>
+        <GenrePage />
     </>
   );
 }
