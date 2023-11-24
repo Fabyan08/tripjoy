@@ -13,7 +13,7 @@ import { FaArrowUp } from "react-icons/fa";
 export default function Home() {
   return (
     <>
-      <main className="light light:bg-[url('/assets/img/bg.jpg')] dark:bg-[url('/assets/img/bg3.jpg')] relative  bg-cover h-[972px] overflow-x-hidden">
+      <main className="light light:bg-[url('/assets/img/bg.jpg')] dark:bg-[url('/assets/img/bg3.jpg')] relative  bg-cover h-fit pb-20 overflow-x-hidden">
         <Nav className="fixed top-0" />
 
         <h1 className="-mt-20 text-[80px] md:text-[200px] font-black text-center flex justify-center items-center h-screen font-figtree text-white/70">
