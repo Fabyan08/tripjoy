@@ -1,3 +1,5 @@
+"use client";
+
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 import { CiUser } from "react-icons/ci";
@@ -18,7 +20,7 @@ export default function LoginPage() {
               href="/"
               className="flex space-x-2 items-center text-2xl absolute text-white"
             >
-              <IoMdArrowRoundBack className="text-2xl"/>
+              <IoMdArrowRoundBack className="text-2xl" />
               <h1>Back To Home</h1>
             </Link>
           </div>

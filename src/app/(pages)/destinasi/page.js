@@ -1,3 +1,4 @@
+"use client";
 import SliderDestinasi from "@/app/components/custom/SliderDestinasi";
 import Nav from "@/app/components/nav/page";
 import GenrePage from "./genre/page";

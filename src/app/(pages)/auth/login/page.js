@@ -1,3 +1,4 @@
+"use client";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 import { CiUser } from "react-icons/ci";
