@@ -3,7 +3,7 @@ export default function DiscoverPage() {
   return (
     <section
       id="Discover"
-      className="bg-gradient-to-t from-[#162238] to-bl pt-20 md:pt-40  text-white"
+      className="bg-gradient-to-t from-[#162238] to-[#090715] pt-20 md:pt-40  text-white"
     >
       <div className="text-center">
         <h1 className="text-blue-400 text-2xl">Discover Trip</h1>
@@ -19,7 +19,6 @@ export default function DiscoverPage() {
         </div>{" "}
       </div>
       <div className="md:flex mt-10 grid grid-cols-2 px-10  md:space-x-10 relative md:justify-between h-[500px]">
-      
         <Image
           src="assets/img/discover/1.jpg"
           className="w-full rounded-lg h-full hover:scale-[1.05] duration-300"

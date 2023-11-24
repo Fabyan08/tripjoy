@@ -19,7 +19,7 @@ module.exports = {
       colors: {
         primary: "#61AEDA",
         second: "#6DDEB3",
-        bl: "#090715",
+        bl: "#0D1E3D",
         bl2: "#10375A",
         purp: "#162238",
       },

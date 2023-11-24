@@ -2,6 +2,9 @@
 // import { Slider } from "@nextui-org/react";
 import { CiSearch } from "react-icons/ci";
 import React from "react";
+import { MdNavigateNext } from "react-icons/md";
+
+import { FaStar } from "react-icons/fa";
 
 import {
   Accordion,
@@ -16,10 +19,7 @@ export default function GenrePage() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
     <>
-      <section
-        id="genre"
-        className="bg-gradient-to-b from-bl via-bl to-bl2 w-full h-fit"
-      >
+      <section id="genre" className="bg-bl w-full h-fit pb-20">
         {/* <div className="px-20">
           <h1 className="text-white text-4xl">Browse by Category</h1>
         </div> */}
@@ -176,151 +176,393 @@ export default function GenrePage() {
                   </AccordionItem>
                 </Accordion>{" "}
               </div>
-              <div className="w-3/4 bg-bl rounded-lg border-2 px-10 border-lg h-fit p-2">
-                <form action="" className="flex justify-between space-x-10 ">
+              <div className="w-3/4 max-h-[1000px] overflow-auto bg-bl rounded-lg border-2 px-10 border-lg h-fit p-2">
+                <form action="" className="flex justify-end space-x-10 ">
                   <div className="relative ml-2">
+                    <CiSearch className="text-white  absolute left-2 top-1/2 transform -translate-y-1/2" />
+                    <input
+                      type="text"
+                      placeholder="Search"
+                      className="border-b-4  p-2 pl-8 rounded-full  w-full bg-transparent  focus:outline-none text-white border-bl2"
+                    />
+                  </div>
+                  {/* <div className="relative ml-2">
                     <CiSearch className="text-white  absolute left-2 top-1/2 transform -translate-y-1/2" />
                     <input
                       type="text"
                       className="border-b-4  p-2 pl-8  w-full bg-transparent  focus:outline-none text-white border-bl2"
                     />
-                  </div>
-                  <div className="relative ml-2">
-                    <CiSearch className="text-white  absolute left-2 top-1/2 transform -translate-y-1/2" />
-                    <input
-                      type="text"
-                      className="border-b-4  p-2 pl-8  w-full bg-transparent  focus:outline-none text-white border-bl2"
-                    />
-                  </div>
+                  </div> */}
                 </form>
                 <div className="mt-2">
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
+                  <div className="flex justify-center">
+                    <div className="grid grid-cols-3 p-2 gap-3">
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <a href="/detail">
+                                  <MdNavigateNext className="text-4xl" />
+                                </a>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
+                        <div className="flex relative items-end h-full justify-center">
+                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
+                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
+                              <h1 className="text-lg text-gray-800 text-center font-semibold">
+                                <span className="text-blue-500 font-bold">
+                                  31
+                                </span>{" "}
+                                Dec
+                              </h1>
+                            </div>
+                            <h1 className="font-bold">
+                              Tanjung Pinang, Makassar
+                            </h1>
+                            <hr className="px-4 my-1 " />
+                            <h1 className="text-sm">
+                              Wisata Alam Indah dengan Penampilan Hutan yang
+                              Asri dan....
+                            </h1>
+                            <div className="mt-2 flex justify-between">
+                              <div className="flex">
+                                <h1 className="flex spapce-x-2 items-center">
+                                  Rp1.000.000 ({"5"}
+                                  <FaStar className="text-yellow-300" /> )
+                                </h1>
+                              </div>
+                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
+                                <MdNavigateNext className="text-4xl" />
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="w-full bg-[url('/assets/img/destinasi/1.png')]  bg-cover rounded-xl h-96 object-cover">
-                      <div className="flex relative items-end h-full justify-center">
-                        <div className="h-40 w-60 mb-2 p-2 bg-white/30 border-2 border-white backdrop-blur-md hover:bg-white duration-200 hover:scale-[1.02] rounded-xl">
-                          <h1 className="font-bold">
-                            Tanjung Pinang, Makassar
-                          </h1>
-                          <h1 className="text-sm">
-                            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan
-                            Berlaku
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                   
                   </div>
                 </div>
               </div>

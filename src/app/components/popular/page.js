@@ -2,7 +2,7 @@ import SliderEvent from "../custom/Slider";
 
 export default function PopularPage() {
   return (
-    <section id="Popular" className="bg-bl p-10 text-white px-10">
+    <section id="Popular" className="bg-[#090715] p-10 text-white px-10">
       <div className="md:pt-10 space-y-4 md:space-y-0 md:flex justify-between">
         <div>
           <h1 className="text-blue-400 text-2xl">Popular Trip</h1>
