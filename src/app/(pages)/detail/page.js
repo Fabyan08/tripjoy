@@ -8,8 +8,9 @@ export default function DetailPage() {
     <>
       <section id="detail" className="bg-[#0D1E3D] w-full h-fit pb-20 mb-96">
         <Nav />
-        <div className="pt-24 flex items-center justify-center space-x-4">
-          <div className="flex flex-col">
+        {/* <div className="flex "></div> */}
+        <div className="pt-24 md:flex items-center justify-center space-x-4">
+          <div className="flex flex-col text-center">
             <h1 className="text-7xl font-bold text-white">Gunung</h1>
             <h1 className="text-7xl font-bold text-white">Bromo</h1>
           </div>

@@ -33,13 +33,25 @@ const SliderDestinasi = ({ carouselImage }) => {
             initialSlide={1}
             modules={[Scrollbar]}
             className="mySwiper text-black"
+            onInit={(swiper) => {
+              // Set initial spaceBetween value based on screen width
+              if (window.innerWidth < 640) {
+                swiper.params.spaceBetween = 50;
+                swiper.update(); // Update Swiper to apply changes
+              }
+            }}
+            onResize={(swiper) => {
+              // Update spaceBetween value when window is resized
+              swiper.params.spaceBetween = window.innerWidth < 640 ? 50 : -100;
+              swiper.update(); // Update Swiper to apply changes
+            }}
           >
             <div className="flex justify-center">
               <SwiperSlide>
                 <div className="flex justify-center">
                   <img
                     src="/assets/img/popular/3.jpg"
-                    className="object-cover h-[600px] w-[90%] mx-auto rounded-lg"
+                    className="object-cover md:h-[600px] w-[90%] mx-auto rounded-lg"
                     alt=""
                   />
                 </div>
@@ -48,7 +60,7 @@ const SliderDestinasi = ({ carouselImage }) => {
                 <div className="flex justify-center">
                   <img
                     src="/assets/img/popular/3.jpg"
-                    className="object-cover h-[600px] w-[90%] mx-auto rounded-lg"
+                    className="object-cover md:h-[600px] w-[90%] mx-auto rounded-lg"
                     alt=""
                   />
                 </div>
@@ -57,7 +69,7 @@ const SliderDestinasi = ({ carouselImage }) => {
                 <div className="flex justify-center">
                   <img
                     src="/assets/img/popular/3.jpg"
-                    className="object-cover h-[600px] w-[90%] mx-auto rounded-lg"
+                    className="object-cover md:h-[600px] w-[90%] mx-auto rounded-lg"
                     alt=""
                   />
                 </div>

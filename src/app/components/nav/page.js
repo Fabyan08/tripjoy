@@ -80,13 +80,11 @@ export default function Nav() {
             <Link
               className="w-full"
               color={
-                index === 2
-                  ? "warning"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
+                index === 1
+                  ? "warning" // warna untuk "Destinasi"
+                  : "foreground" // warna untuk "Beranda" atau item lainnya
               }
-              href="#"
+              href={index === 1 ? "/destinasi" : "/"} // atur href sesuai indeks
               size="lg"
             >
               {item}

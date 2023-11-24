@@ -23,7 +23,7 @@ export default function GenrePage() {
         {/* <div className="px-20">
           <h1 className="text-white text-4xl">Browse by Category</h1>
         </div> */}
-        <div className="px-20">
+        <div className="px-10 pt-20 md:pt-0 md:px-20">
           <div className="flex justify-between">
             <h1 className="text-white text-4xl">All Tour</h1>
             <div className="flex items-center space-x-2 text-white">
@@ -36,7 +36,7 @@ export default function GenrePage() {
           </div>
           <div className="mt-10">
             <div className="flex w-full space-x-2 ">
-              <div className="w-1/3 bg-bl border-2 p-2 rounded-lg border-lg h-fit">
+              <div className="w-1/3 hidden md:flex bg-bl border-2 p-2 rounded-lg border-lg h-fit">
                 <Accordion
                   className="text-white"
                   motionProps={{
@@ -176,7 +176,7 @@ export default function GenrePage() {
                   </AccordionItem>
                 </Accordion>{" "}
               </div>
-              <div className="w-3/4 max-h-[1000px] overflow-auto bg-bl rounded-lg border-2 px-10 border-lg h-fit p-2">
+              <div className="md:w-3/4 w-full max-h-[1000px] overflow-auto bg-bl rounded-lg border-2 px-4 md:px-10 border-lg h-fit p-2">
                 <form action="" className="flex justify-end space-x-10 ">
                   <div className="relative ml-2">
                     <CiSearch className="text-white  absolute left-2 top-1/2 transform -translate-y-1/2" />
@@ -186,17 +186,10 @@ export default function GenrePage() {
                       className="border-b-4  p-2 pl-8 rounded-full  w-full bg-transparent  focus:outline-none text-white border-bl2"
                     />
                   </div>
-                  {/* <div className="relative ml-2">
-                    <CiSearch className="text-white  absolute left-2 top-1/2 transform -translate-y-1/2" />
-                    <input
-                      type="text"
-                      className="border-b-4  p-2 pl-8  w-full bg-transparent  focus:outline-none text-white border-bl2"
-                    />
-                  </div> */}
                 </form>
                 <div className="mt-2">
                   <div className="flex justify-center">
-                    <div className="grid grid-cols-3 p-2 gap-3">
+                    <div className="grid md:grid-cols-3  gap-3">
                       <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
                         <div className="flex relative items-end h-full justify-center">
                           <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
