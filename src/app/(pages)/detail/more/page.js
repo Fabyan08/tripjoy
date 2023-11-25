@@ -5,7 +5,7 @@ import { FaBookOpenReader } from "react-icons/fa6";
 import { LuGalleryHorizontal } from "react-icons/lu";
 import { MdOutlineRateReview } from "react-icons/md";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import SliderGallery from "./SliderGallery";
+import SliderGallery from "./MorePage/SliderGallery";
 import { IoSend } from "react-icons/io5";
 
 export default function MorePage() {
