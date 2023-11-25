@@ -5,74 +5,20 @@ import { FaStar } from "react-icons/fa";
 import { MdNavigateNext } from "react-icons/md";
 
 const DestinationCard = ({ destination }) => {
-  const destinations = [
-    {
-      date: "31",
-      location: "Tanjung Pinang, Makassar",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 1000000,
-      rating: 5,
-    },
-    {
-      date: "25",
-      location: "Destinasi Lain",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 800000,
-      rating: 4,
-    },
-    {
-      date: "25",
-      location: "Destinasi Lain",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 800000,
-      rating: 4,
-    },
-    {
-      date: "25",
-      location: "Destinasi Lain",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 800000,
-      rating: 4,
-    },
-    {
-      date: "25",
-      location: "Destinasi Lain",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 800000,
-      rating: 4,
-    },
-    {
-      date: "25",
-      location: "Destinasi Lain",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 800000,
-      rating: 4,
-    },
-    {
-      date: "25",
-      location: "Destinasi Lain",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 800000,
-      rating: 4,
-    },
-    {
-      date: "25",
-      location: "Destinasi Lain",
-      description:
-        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
-      price: 800000,
-      rating: 4,
-    },
-    // Tambahkan destinasi lain jika diperlukan
-    // Tambahkan destinasi lain jika diperlukan
-  ];
+  // Perform null checks before accessing properties
+  if (!destination || typeof destination !== "object") {
+    // Handle the case where destination is undefined or not an object
+    return null;
+  }
+
+  // Destructure properties with default values to avoid potential undefined issues
+  const {
+    date = "",
+    location = "",
+    description = "",
+    price = 0,
+    rating = 0,
+  } = destination;
 
   return (
     <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
@@ -80,19 +26,16 @@ const DestinationCard = ({ destination }) => {
         <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
           <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
             <h1 className="text-lg text-gray-800 text-center font-semibold">
-              <span className="text-blue-500 font-bold">
-                {destination.date}
-              </span>{" "}
-              Dec
+              <span className="text-blue-500 font-bold">{date}</span> Dec
             </h1>
           </div>
-          <h1 className="font-bold">{destination.location}</h1>
+          <h1 className="font-bold">{location}</h1>
           <hr className="px-4 my-1 " />
-          <h1 className="text-sm">{destination.description}</h1>
+          <h1 className="text-sm">{description}</h1>
           <div className="flex justify-between">
             <div className="flex">
               <h1 className="flex space-x-2 items-center">
-                Rp{destination.price.toLocaleString()} ({destination.rating}{" "}
+                Rp{price.toLocaleString()} ({rating}{" "}
                 <FaStar className="text-yellow-300" />)
               </h1>
             </div>
