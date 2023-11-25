@@ -21,16 +21,14 @@ export default function DetailPage() {
       <section id="detail" className="bg-[#0D1E3D] w-full h-fit pb-20 md:px-40">
         <Nav />
         {/* <div className="flex "></div> */}
-        <div className="pt-24 relative md:flex items-center justify-center space-x-4">
-          <div className="flex flex-col text-end uppercase  ">
+        <div className="pt-24 pr-6 relative md:flex items-center justify-center space-x-4">
+          <div className="flex flex-col text-center md:text-end uppercase  ">
             <h1 className="text-7xl font-bold text-white">Gunung</h1>
             <h1 className="text-7xl font-bold text-white">Bromo</h1>
           </div>
-          <Image
+          <img
             src="/assets/img/detail/1.jpg"
-            className="rounded-tr-[200px] h-[500px] border-blue-300 border-8 rounded-tl-[200px] rounded-b-lg object-cover hover:scale-[1.02] duration-300"
-            width={385}
-            height={700}
+            className="rounded-tr-[200px] h-[500px] border-blue-300 border-8 rounded-tl-[200px] rounded-b-lg object-cover hover:scale-[1.02] duration-300 w-full md:w-[400px] h-[500px]"
             alt=""
             // style={{ width: "100%", height: "auto" }} // optional
           />
@@ -81,7 +79,11 @@ export default function DetailPage() {
               </button>
             </div>
             <div>
-              <img src="/assets/img/detail/order.png" className="hidden md:flex w-40" alt="" />
+              <img
+                src="/assets/img/detail/order.png"
+                className="hidden md:flex w-40"
+                alt=""
+              />
               <i className="https://lottie.host/0744899b-1670-4ad0-ac8a-ed6a342428a9/mc2VUceAs3.lottie"></i>
             </div>
           </div>
