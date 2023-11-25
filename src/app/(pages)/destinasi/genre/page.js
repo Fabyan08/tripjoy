@@ -3,9 +3,9 @@
 import { CiSearch } from "react-icons/ci";
 import React from "react";
 import { MdNavigateNext } from "react-icons/md";
-
+import DestinationCard from "../CardDestination/page";
 import { FaStar } from "react-icons/fa";
-
+import { useState } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -15,8 +15,89 @@ import {
 } from "@nextui-org/react";
 
 export default function GenrePage() {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (event) => {
+    // Remove non-digit characters from the input value
+    const rawValue = event.target.value.replace(/\D/g, "");
+
+    // Format the input value with thousand separators
+    const formattedValue = Number(rawValue).toLocaleString();
+
+    // Update the state with the formatted value
+    setInputValue(formattedValue);
+  };
   const defaultContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
+  const destinations = [
+    {
+      date: "31",
+      location: "Tanjung Pinang, Makassar",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 1000000,
+      rating: 5,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    // Tambahkan destinasi lain jika diperlukan
+    // Tambahkan destinasi lain jika diperlukan
+  ];
   return (
     <>
       <section id="genre" className="bg-bl w-full h-fit pb-20">
@@ -78,8 +159,8 @@ export default function GenrePage() {
                 >
                   <AccordionItem
                     key="1"
-                    aria-label="Accordion 1"
-                    title="Accordion 1"
+                    aria-label="Tipe Perjalanan"
+                    title="Tipe Perjalanan"
                   >
                     <Checkbox defaultSelected radius="full">
                       Open Trip
@@ -90,29 +171,25 @@ export default function GenrePage() {
                   </AccordionItem>
                   <AccordionItem
                     key="2"
-                    aria-label="Accordion 2"
-                    title="Accordion 2"
+                    aria-label="Tema Perjalanan"
+                    title="Tema Perjalanan"
                   >
                     <div className="flex flex-col space-y-2">
                       <Checkbox defaultSelected radius="full">
-                        Open Trip
+                        Destinasi Populer
                       </Checkbox>{" "}
                       <Checkbox defaultSelected radius="full">
-                        Open Trip
+                        Vitamin Sea{" "}
                       </Checkbox>{" "}
                       <Checkbox defaultSelected radius="full">
-                        Open Trip
+                        Pegunungan{" "}
                       </Checkbox>{" "}
                     </div>
                   </AccordionItem>
-                  <AccordionItem
-                    key="3"
-                    aria-label="Accordion 3"
-                    title="Accordion 3"
-                  >
+                  <AccordionItem key="3" aria-label="Budget" title="Budget">
                     <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
                       <Input
-                        placeholder="0.00"
+                        placeholder="000"
                         labelPlacement="outside"
                         endContent={
                           <div className="flex items-center">
@@ -124,53 +201,56 @@ export default function GenrePage() {
                               id="currency"
                               name="currency"
                             >
+                              <option>RP</option>
                               <option>USD</option>
-                              <option>ARS</option>
-                              <option>EUR</option>
                             </select>
                           </div>
                         }
-                        type="number"
-                      />{" "}
+                        type="text" // Change the type to text to allow non-numeric characters
+                        value={inputValue}
+                        onChange={handleInputChange}
+                      />
                     </div>
                   </AccordionItem>
                   <AccordionItem
                     key="4"
-                    aria-label="Accordion 4"
-                    title="Accordion 4"
+                    aria-label="Lokasi Keberangkatan"
+                    title="Lokasi Keberangkatan"
                   >
                     <div className="relative ml-2">
                       <CiSearch className="text-white  absolute left-2 top-1/2 transform -translate-y-1/2" />
                       <input
                         type="text"
                         className="bg-gray-600/40 focus:bg-bl/10 w-40 md:w-60 text-white  p-2 pl-8 h-10 rounded-[10px] border-white/30 focus:scale-[1.01] focus:border-2 focus:border-blue-500 duration-150"
-                        placeholder="Name"
+                        placeholder="Dimana Lokasi Kamu?"
                       />
                     </div>
                   </AccordionItem>
-                  <AccordionItem
-                    key="5"
-                    aria-label="Accordion 5"
-                    title="Accordion 5"
-                  >
+                  <AccordionItem key="5" aria-label="Rating" title="Rating">
                     <Checkbox defaultSelected radius="full">
-                      Open Trip
+                      <div className="flex items-center gap-1">
+                        <FaStar className="text-yellow-300" />
+                        <h1>3</h1>
+                      </div>
                     </Checkbox>
-                    <Checkbox defaultSelected radius="full" className="ml-2">
-                      Private Trip
+                    <Checkbox defaultSelected radius="full" className="ml-4">
+                      <div className="flex items-center gap-1 ">
+                        <FaStar className="text-yellow-300" />
+                        <h1>5</h1>
+                      </div>
                     </Checkbox>
                   </AccordionItem>
                   <AccordionItem
                     key="6"
-                    aria-label="Accordion 6"
-                    title="Accordion 6"
+                    aria-label="Durasi Wisata"
+                    title="Durasi Wisata"
                   >
                     <Slider
                       label="Durasi"
                       step={1}
                       maxValue={10}
                       minValue={0}
-                      defaultValue={0.4}
+                      defaultValue={1}
                       className="max-w-md"
                     />
                   </AccordionItem>
@@ -178,7 +258,7 @@ export default function GenrePage() {
               </div>
               <div className="md:w-3/4 w-full max-h-[1000px] overflow-auto bg-bl rounded-lg border-2 px-4 md:px-10 border-lg h-fit p-2">
                 <form action="" className="flex justify-end space-x-10 ">
-                  <div className="relative ml-2">
+                  <div className="relative ml-2 mb-4">
                     <CiSearch className="text-white  absolute left-2 top-1/2 transform -translate-y-1/2" />
                     <input
                       type="text"
@@ -190,371 +270,14 @@ export default function GenrePage() {
                 <div className="mt-2">
                   <div className="flex justify-center">
                     <div className="grid md:grid-cols-3  gap-3">
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="-mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex space-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <a href="/detail">
-                                  <MdNavigateNext className="text-4xl" />
-                                </a>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
-                        <div className="flex relative items-end h-full justify-center">
-                          <div className="h-40 w-full p-2 hover:text-gray-800 bg-white/30 text-white border-2 border-white backdrop-blur-xl hover:bg-gray-200  duration-200 hover:scale-[1.02] rounded-b-xl">
-                            <div className="bg-white w-14 h-14 -mt-8 rounded-xl shadow-md">
-                              <h1 className="text-lg text-gray-800 text-center font-semibold">
-                                <span className="text-blue-500 font-bold">
-                                  31
-                                </span>{" "}
-                                Dec
-                              </h1>
-                            </div>
-                            <h1 className="font-bold">
-                              Tanjung Pinang, Makassar
-                            </h1>
-                            <hr className="px-4 my-1 " />
-                            <h1 className="text-sm">
-                              Wisata Alam Indah dengan Penampilan Hutan yang
-                              Asri dan....
-                            </h1>
-                            <div className="mt-2 flex justify-between">
-                              <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
-                                  Rp1.000.000 ({"5"}
-                                  <FaStar className="text-yellow-300" /> )
-                                </h1>
-                              </div>
-                              <button className="bg-white/60  text-blue-500 duration-300 hover:bg-white hover:shadow-md hover:border-2 hover:border-blue-500 rounded-full">
-                                <MdNavigateNext className="text-4xl" />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      {/* Gunakan komponen DestinationCard untuk setiap destinasi */}
+                      {/* Gunakan komponen DestinationCard untuk setiap destinasi */}
+                      {destinations.map((destination, index) => (
+                        <DestinationCard
+                          key={index}
+                          destination={destination}
+                        />
+                      ))}
                     </div>
                   </div>
                 </div>

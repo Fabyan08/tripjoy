@@ -10,9 +10,7 @@ export default function DestinasiPage() {
     <>
       <div className="bg-bl w-fwull h-fit pb-20 md:h-screen">
         <Nav />
-        <div>
-          <h1>Destinasi</h1>
-        </div>
+        
         <div className="pt-20">
           <SliderDestinasi />
         </div>

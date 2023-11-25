@@ -10,7 +10,8 @@ import SliderGallery from "./MorePage/SliderGallery";
 import { IoSend } from "react-icons/io5";
 
 export default function MorePage() {
-  const defaultContent = "Lorem ipsum dolor sit amet,";
+  const defaultContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci magni illum laudantium provident culpa temporibus quam maiores dicta. A dolorem natus debitis explicabo rem dolore ullam mollitia odit cumque.";
   return (
     <>
       <section
@@ -48,18 +49,10 @@ export default function MorePage() {
                   <AccordionItem key="1" aria-label="Hari 1" title="Hari 1">
                     {defaultContent}
                   </AccordionItem>
-                  <AccordionItem
-                    key="2"
-                    aria-label="Accordion 2"
-                    title="Accordion 2"
-                  >
+                  <AccordionItem key="2" aria-label="Hari 2" title="Hari 2">
                     {defaultContent}
                   </AccordionItem>
-                  <AccordionItem
-                    key="3"
-                    aria-label="Accordion 3"
-                    title="Accordion 3"
-                  >
+                  <AccordionItem key="3" aria-label="Hari 3" title="Hari 3">
                     {defaultContent}
                   </AccordionItem>
                 </Accordion>{" "}
@@ -73,11 +66,21 @@ export default function MorePage() {
                   </div>
                 }
               >
-                <ul className="custom-list ">
-                  <li>Tes</li>
-                  <li>Tes</li>
-                  <li>Tes</li>
-                  <li>Tes</li>
+                <ul className="custom-list space-y-2">
+                  <li>
+                    1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Beatae, harum?
+                  </li>
+                  <li>
+                    2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente earum voluptates ab exercitationem beatae minus ea
+                    quia impedit aliquam facere!
+                  </li>
+                  <li>3. Lorem ipsum dolor sit.</li>
+                  <li>
+                    4. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ab, quisquam.
+                  </li>
                 </ul>
               </Tab>
               <Tab

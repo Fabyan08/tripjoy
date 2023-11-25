@@ -18,9 +18,9 @@ export default function LoginPage() {
           <div className="top-10 left-2 md:left-10 absolute z-10 w-full">
             <Link
               href="/"
-              className="flex space-x-2 items-center text-2xl absolute text-white"
+              className="flex space-x-2 items-center text-sm md:text-2xl absolute text-white"
             >
-              <IoMdArrowRoundBack className="text-2xl" />
+              <IoMdArrowRoundBack className=" text-sm md:text-2xl" />
               <h1>Back To Home</h1>
             </Link>
           </div>
