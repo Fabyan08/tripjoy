@@ -1,3 +1,4 @@
+"use client";
 import { User, Link } from "@nextui-org/react";
 import { Tabs, Tab, Chip } from "@nextui-org/react";
 import { GrWaypoint } from "react-icons/gr";

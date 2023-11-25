@@ -1,15 +1,8 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { CiClock2 } from "react-icons/ci";
 
-import {
-  Pagination,
-  Autoplay,
-  Navigation,
-  EffectCoverflow,
-} from "swiper/modules";
-// import Image from "next/image";
+import { Pagination, Navigation, EffectCoverflow } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
