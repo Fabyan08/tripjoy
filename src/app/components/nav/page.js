@@ -19,7 +19,7 @@ export default function Nav() {
 
   return (
     <Navbar
-      className="p-2"
+      className="p-2 text-white font-bold"
       style={{ maxWidth: "2000px", position: "fixed", top: 0 }}
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
@@ -32,15 +32,19 @@ export default function Nav() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <Image src="/assets/img/logo2.webp" width={150} height={150} />
-          <p className="font-bold text-inherit"></p>
+          <a href="/">
+            <Image src="/assets/img/logo2.webp" width={150} height={150} />
+            <p className="font-bold text-inherit"></p>
+          </a>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <Image src="/assets/img/logo2.webp" width={150} height={150} />
-          <p className="font-bold text-inherit"></p>
+          <a href="/">
+            <Image src="/assets/img/logo2.webp" width={150} height={150} />
+            <p className="font-bold text-inherit"></p>
+          </a>
         </NavbarBrand>
         <NavbarItem>
           <Link
@@ -61,10 +65,10 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem>
+        <NavbarItem className="rotate-12 hover:rotate-0  hover:scale-110 duration-300">
           <Link
             // as={Link}
-            className=" px-4 py-2 rounded-full hover:scale-[1.05] duration-500 bg-white backdrop-blur-md text-gray-900 font-semibold"
+            className=" px-4 py-2 rounded-full bg-bl backdrop-blur-md border-2 border-white/50 text-white font-semibold"
             color="warning"
             href="/auth/login"
             variant="flat"
@@ -74,15 +78,15 @@ export default function Nav() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="p-10 text-xl text-gray-800 font-bold">
+      <NavbarMenu className="p-10 text-xl text-white font-bold">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               className="w-full"
               color={
                 index === 1
-                  ? "warning" // warna untuk "Destinasi"
-                  : "foreground" // warna untuk "Beranda" atau item lainnya
+                  ? "#FFFFFF" // warna untuk "Destinasi"
+                  : "#FFFFFF" // warna untuk "Beranda" atau item lainnya
               }
               href={index === 1 ? "/destinasi" : "/"} // atur href sesuai indeks
               size="lg"

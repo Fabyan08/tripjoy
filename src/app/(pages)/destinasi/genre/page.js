@@ -209,9 +209,9 @@ export default function GenrePage() {
                               Wisata Alam Indah dengan Penampilan Hutan yang
                               Asri dan....
                             </h1>
-                            <div className="mt-2 flex justify-between">
+                            <div className="-mt-2 flex justify-between">
                               <div className="flex">
-                                <h1 className="flex spapce-x-2 items-center">
+                                <h1 className="flex space-x-2 items-center">
                                   Rp1.000.000 ({"5"}
                                   <FaStar className="text-yellow-300" /> )
                                 </h1>

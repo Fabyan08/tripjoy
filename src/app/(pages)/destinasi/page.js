@@ -8,7 +8,7 @@ import { FaArrowUp } from "react-icons/fa";
 export default function DestinasiPage() {
   return (
     <>
-      <div className="bg-bl w-full h-fit pb-20 md:h-screen">
+      <div className="bg-bl w-fwull h-fit pb-20 md:h-screen">
         <Nav />
         <div>
           <h1>Destinasi</h1>
