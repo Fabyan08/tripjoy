@@ -5,6 +5,75 @@ import { FaStar } from "react-icons/fa";
 import { MdNavigateNext } from "react-icons/md";
 
 const DestinationCard = ({ destination }) => {
+  const destinations = [
+    {
+      date: "31",
+      location: "Tanjung Pinang, Makassar",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 1000000,
+      rating: 5,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    {
+      date: "25",
+      location: "Destinasi Lain",
+      description:
+        "Wisata Alam Indah dengan Penampilan Hutan yang Asri dan....",
+      price: 800000,
+      rating: 4,
+    },
+    // Tambahkan destinasi lain jika diperlukan
+    // Tambahkan destinasi lain jika diperlukan
+  ];
+
   return (
     <div className="w-full bg-[url('/assets/img/destinasi/1.png')] bg-cover rounded-xl h-96 object-cover">
       <div className="flex relative items-end h-full justify-center">
